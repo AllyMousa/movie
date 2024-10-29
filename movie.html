@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .card {
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-film me-2"></i>Movie Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home"><i class="fas fa-home me-1"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#movies"><i class="fas fa-video me-1"></i>Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cartoons"><i class="fas fa-child me-1"></i>Cartoons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#series"><i class="fas fa-tv me-1"></i>Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recent"><i class="fas fa-clock me-1"></i>Recent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#popular"><i class="fas fa-fire me-1"></i>Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html"><i class="fas fa-envelope me-1"></i>Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html"><i class="fas fa-info-circle me-1"></i>About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html"><i class="fas fa-cogs me-1"></i>Our Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="mb-4 text-center" id="home">Welcome to Movie Hub</h1>
+
+        <h2 class="mb-4" id="movies">Movies</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Deadpool & Wolverine (2024).jpg" class="card-img-top" alt="Deadpool & Wolverine">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Deadpool & Wolverine (2024)</h5>
+                        <p class="card-text flex-grow-1">Deadpool is offered a place in the Marvel Cinematic Universe by
+                            the Time Variance Authority, but instead recruits a variant of Wolverine to save his
+                            universe from extinction.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="Deadpool & Wolverine (2024).mp4"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Beetlejuice Beetlejuice (2024).jpg" class="card-img-top" alt="Beetlejuice Beetlejuice">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Beetlejuice Beetlejuice (2024)</h5>
+                        <p class="card-text flex-grow-1">After a family tragedy, three generations of the Deetz family
+                            return home to Winter River. Still haunted by Beetlejuice, Lydia's life is turned upside
+                            down when her teenage daughter, Astrid, accidentally opens the portal to the Afterlife.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://go.wootly.ch/dash?source=web&id=514b5370063cabf91442a6eb5731ddb1ad57db08&sig=7OiJV_30OBQ1YSyRTvZxnQ&expire=1729023112&ofs=11&usr=184863"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Boy Kills World (2024).jpg" class="card-img-top" alt="Boy Kills World">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Boy Kills World (2024)</h5>
+                        <p class="card-text flex-grow-1">A fever dream action film that follows Boy, a deaf person with
+                            a vibrant imagination. When his family is murdered, he is trained by a mysterious shaman to
+                            repress his childish imagination and become an instrument of death.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="Boy Kills World (2024).mp4"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5" id="cartoons">Cartoons</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Inside Out 2 (2024).jpg" class="card-img-top" alt="Inside Out 2">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Inside Out 2 (2024)</h5>
+                        <p class="card-text flex-grow-1">A sequel that features Riley entering puberty and experiencing
+                            brand new, more complex emotions as a result. As Riley tries to adapt to her teenage years,
+                            her old emotions try to adapt to the possibility of being replaced.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="Inside Out 2 (2024).mp4"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Despicable Me 4 (2024).jpg" class="card-img-top" alt="Despicable Me 4">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Despicable Me 4 (2024)</h5>
+                        <p class="card-text flex-grow-1">Gru, Lucy, Margo, Edith, and Agnes welcome a new member to the
+                            family, Gru Jr., who is intent on tormenting his dad. Gru faces a new nemesis in Maxime Le
+                            Mal and his girlfriend Valentina, and the family is forced to go on the run.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="Despicable Me 4 (2024).mp4"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Kung Fu Panda 4 (2024).jpg" class="card-img-top" alt="Kung Fu Panda 4">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Kung Fu Panda 4 (2024)</h5>
+                        <p class="card-text flex-grow-1">After Po is tapped to become the Spiritual Leader of the Valley
+                            of Peace, he needs to find and train a new Dragon Warrior, while a wicked sorceress plans to
+                            re-summon all the master villains whom Po has vanquished to the spirit realm.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://go.wootly.ch/dash?source=web&id=2e6d54db2c86abfa34519fb9dad0d8b631dcba33&sig=R-JgnJZeqgGJf874aVTihQ&expire=1729024900&ofs=11&usr=183181"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5" id="series">Series</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Superman and Lois S4.jpg" class="card-img-top" alt="Superman and Lois S4, E3">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Superman and Lois S4, E3 - Always My Hero</h5>
+                        <p class="card-text flex-grow-1">A sequel that features Riley entering puberty and experiencing
+                            brand new, more complex emotions as a result. As Riley tries to adapt to her teenage years,
+                            her old emotions try to adapt to the possibility of being replaced.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://go.wootly.ch/dash?source=web&id=708331c7626d48594dee3676214e42c81e98d4e6&sig=m7VM3mHiMJlF8Leqkqi2Yw&expire=1729025587&ofs=11&usr=184913"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Vikings Valhalla S3.jpg" class="card-img-top" alt="Vikings: Valhalla S3, E1">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Vikings: Valhalla S3, E1 - Seven Years Later</h5>
+                        <p class="card-text flex-grow-1">Harald and Leif help Romanos lay siege at Syracuse. Canute
+                            travels to Rome to meet with the Pope. A new arrival in Jomsborg catches Freydis' eye.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://go.wootly.ch/dash?source=web&id=b436525b3b5d2d65fdcd4d1fb822f25021215e60&sig=sIZyTf60I7gySFfA_IqEgQ&expire=1729025816&ofs=11&usr=184289"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="London Spy S1.jpg" class="card-img-top" alt="London Spy S1, E1">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">London Spy S1, E1 - Lullaby</h5>
+                        <p class="card-text flex-grow-1">A chance romance seems promising for an investment banker and a
+                            young man, but when the banker disappears, things begin to unravel.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://go.wootly.ch/dash?source=web&id=f4a737d018bc91e98d7fe9cd3351e1229173c33b&sig=ySEYhJFU-heuOTZNdc38Eg&expire=1729025938&ofs=11&usr=155403"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5" id="recent">Recent</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Migration (2023).jpg" class="card-img-top" alt="Migration">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Migration (2023)</h5>
+                        <p class="card-text flex-grow-1">A family of ducks try to convince their overprotective father
+                            to go on the vacation of a lifetime.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="Migration (2023).mp4"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Blue Beetle (2023).jpg" class="card-img-top" alt="Blue Beetle">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Blue Beetle (2023)</h5>
+                        <p class="card-text flex-grow-1">An alien scarab chooses Jaime Reyes to be its symbiotic host,
+                            bestowing the recent college graduate with a suit of armor that's capable of extraordinary
+                            powers, forever changing his destiny as he becomes the superhero known as Blue Beetle.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://go.wootly.ch/dash?source=web&id=db2568ea7bae0f6020520aef246e16e8c8173f60&sig=UlMqAd-abn-_WuUEqy9dJg&expire=1729025345&ofs=11&usr=179403"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Teacup S1.jpg" class="card-img-top" alt="Teacup S1, E1">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Teacup S1, E1 - Think About the Bubbles</h5>
+                        <p class="card-text flex-grow-1">The animals act strangely at the Chenoweths' farm; the family
+                            and neighbors search for missing Arlo.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://go.wootly.ch/dash?source=web&id=85e18fbdaf525a6586f2b1958b32c0cb8a5fc66d&sig=Dtx0q1CMZJoClb1-GwzLAg&expire=1729025492&ofs=11&usr=184896"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5" id="popular">Popular</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Godzilla x Kong The New Empire (2024).jpg" class="card-img-top" alt="Godzilla x Kong: The New Empire">
+                    <div class="card-body">
+                        <h5 class="card-title">Godzilla x Kong: The New Empire (2024)</h5>
+                        <p class="card-text">Two ancient titans, Godzilla and Kong, clash in an epic battle as humans
+                            unravel their intertwined origins and connection to
+                            Skull Island's mysteries.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="Godzilla x Kong The New Empire (2024).mp4"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="The Franchise S1.jpg" class="card-img-top" alt="The Franchise S1, E2">
+                    <div class="card-body">
+                        <h5 class="card-title">The Franchise S1, E2 - Scene 36: The Invisible Jackhammer</h5>
+                        <p class="card-text">Hoping to wrap on a complicated stunt by the end of the day, Dan faces
+                            unsolicited scrutiny from Dag, while Anita asserts
+                            herself as the film's newest producer, and Eric demands more extras.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://go.wootly.ch/dash?source=web&id=e246b34e49c483770fcd65ed22c62995c22507b8&sig=jyVS95aGt1Sa5jB9xgMZ2Q&expire=1729025691&ofs=11&usr=184908"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Grease Rise of the Pink Ladies S1.jpg" class="card-img-top" alt="Grease: Rise of the Pink Ladies S1, E1">
+                    <div class="card-body">
+                        <h5 class="card-title">Grease: Rise of the Pink Ladies S1, E1 - We're Gonna Rule the School</h5>
+                        <p class="card-text">On their first day of junior year at Rydell High, four outcasts form an
+                            unlikely friendship that will shake up the social order.
+                        </p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://go.wootly.ch/dash?source=web&id=bea54a0d11b61b6a05eeab5a31c779d8ef498698&sig=ayeHrpI93FngsmC4Of5tgA&expire=1729025737&ofs=11&usr=176437"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Vikings Valhalla S3.jpg" class="card-img-top" alt="Vikings: Valhalla S3, E1">
+                    <div class="card-body">
+                        <h5 class="card-title">Vikings: Valhalla S3, E1 - Seven Years Later</h5>
+                        <p class="card-text">Harald and Leif help Romanos lay siege at Syracuse. Canute travels to Rome
+                            to meet with the Pope. A new arrival in Jomsborg
+                            catches Freydis' eye.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://go.wootly.ch/dash?source=web&id=b436525b3b5d2d65fdcd4d1fb822f25021215e60&sig=sIZyTf60I7gySFfA_IqEgQ&expire=1729025816&ofs=11&usr=184289"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="London Spy S1.jpg" class="card-img-top" alt="London Spy S1, E1">
+                    <div class="card-body">
+                        <h5 class="card-title">London Spy S1, E1 - Lullaby</h5>
+                        <p class="card-text">A chance romance seems promising for an investment banker and a young man,
+                            but when the banker disappears, things begin to
+                            unravel.</p>
+                        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://go.wootly.ch/dash?source=web&id=f4a737d018bc91e98d7fe9cd3351e1229173c33b&sig=ySEYhJFU-heuOTZNdc38Eg&expire=1729025938&ofs=11&usr=155403"><i class="fas fa-play me-2"></i>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Movie Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Watch Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video id="modalVideo" class="w-100" controls>
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const videoModal = document.getElementById('videoModal');
+            const modalVideo = document.getElementById('modalVideo');
+
+            videoModal.addEventListener('show.bs.modal', (event) => {
+                const button = event.relatedTarget;
+                const videoSrc = button.getAttribute('data-video-src');
+                modalVideo.src = videoSrc;
+            });
+
+            videoModal.addEventListener('hidden.bs.modal', () => {
+                modalVideo.pause();
+                modalVideo.currentTime = 0;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
